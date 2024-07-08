@@ -35,6 +35,18 @@
         Green,
         Blue
     }
+
+    public struct Point
+    {
+        public double X { get; set; }
+        public double Y { get; set; }
+
+        public Point(double x, double y)
+        {
+            X = x;
+            Y = y;
+        }
+    }
     class Program
     {
         static void Main(string[] args)
@@ -132,8 +144,36 @@
             //}
             #endregion
 
-        }
+            #region Q5 : Create a struct called "Point"
+            //Console.WriteLine("Enter the coordinates for the first point (x y):");
+            //string[] firstPointInput = Console.ReadLine().Split();
+            //double x1 = double.Parse(firstPointInput[0]);
+            //double y1 = double.Parse(firstPointInput[1]);
 
+            //Point point1 = new Point(x1, y1);
+
+            
+            //Console.WriteLine("Enter the coordinates for the second point (x y):");
+            //string[] secondPointInput = Console.ReadLine().Split();
+            //double x2 = double.Parse(secondPointInput[0]);
+            //double y2 = double.Parse(secondPointInput[1]);
+
+            //Point point2 = new Point(x2, y2);
+
+            //double distance = CalculateDistance(point1, point2);
+
+         
+            //Console.WriteLine($"The distance between the two points is: {distance}");
+            
+
+        }
+        static double CalculateDistance(Point p1, Point p2)
+        {
+            double dx = p1.X - p2.X;
+            double dy = p1.Y - p2.Y;
+            return Math.Sqrt(dx * dx + dy * dy);
+        }
+        #endregion
 
 
     }
