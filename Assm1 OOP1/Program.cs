@@ -1,6 +1,8 @@
-﻿namespace Assm1_OOP1
+﻿//using Assm1_OOP1;
+
+namespace Assm1_OOP1
 {
-    internal class Program
+     class Program
     {
         static void DoSomeCode()
         {
@@ -63,5 +65,13 @@
             }
             //DoSomeCode();
         }
+
+
+        #region Access Modifiers
+        TypeA obj = new TypeA();  
+        //TypeB obj2 = new TypeB();
+        #endregion
+
+
     }
 }
