@@ -1,5 +1,7 @@
 ﻿//using Assm1_OOP1;
 
+using static Assm1_OOP1.Program;
+
 namespace Assm1_OOP1
 {
      class Program
@@ -64,14 +66,72 @@ namespace Assm1_OOP1
                 Console.WriteLine("Finaly");
             }
             //DoSomeCode();
+
+            #region Access Modifiers
+            TypeA obj = new TypeA();
+            //TypeB obj2 = new TypeB();
+            #endregion
+
+
+            #region EX01
+            Grades x = Grades.A;
+            if (x == Grades.A)
+                Console.WriteLine(":(");
+            else
+                Console.WriteLine(":(");
+
+            Grades y = (Grades)2;
+            Console.WriteLine(y);
+
+            Grades z = (Grades)10;
+            Console.WriteLine(z);
+
+            #endregion
         }
 
 
-        #region Access Modifiers
-        TypeA obj = new TypeA();  
-        //TypeB obj2 = new TypeB();
-        #endregion
 
 
+
+
+
+    }
+
+    #region Enum
+    public enum Days
+    {
+        Sat,
+        Sun,
+        Mon,
+        Tues,
+        Wed,
+        Ther,
+        Friday
+    }
+
+    public enum Grades : int
+    {
+        A, B, C, D, E, F
+    }
+
+    public enum Gender : int
+    {
+        Male, Female
+    }
+
+    enum Roles
+    {
+        Admin = 10 , Editor = 20 , Viewer = 30
+    }
+
+    #endregion
+
+    class Employee
+    {
+        String Name;
+        int Age;
+        Double Salary;
+        Gender Gender;
+        Roles Role;
     }
 }
