@@ -29,6 +29,12 @@
         Delete = 4,
         Execute = 8
     }
+    public enum Colors
+    {
+        Red,
+        Green,
+        Blue
+    }
     class Program
     {
         static void Main(string[] args)
@@ -102,6 +108,29 @@
             //}
             #endregion
 
+            #region Q4 : Create an enum called "Colors" with the basic colors (Red, Green, Blue)
+            //Console.WriteLine("Enter a color name (Red, Green, Blue):");
+            //string input = Console.ReadLine();
+
+            //if (Enum.TryParse(input, true, out Colors color))
+            //{
+            //    switch (color)
+            //    {
+            //        case Colors.Red:
+            //        case Colors.Green:
+            //        case Colors.Blue:
+            //            Console.WriteLine($"{color} is a primary color.");
+            //            break;
+            //        default:
+            //            Console.WriteLine($"{color} is not a primary color.");
+            //            break;
+            //    }
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Invalid input. Please enter a valid color name.");
+            //}
+            #endregion
 
         }
 
