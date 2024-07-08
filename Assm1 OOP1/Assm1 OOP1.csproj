@@ -8,4 +8,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="Assm1 OOP1">
+      <HintPath>bin\Debug\net8.0\Assm1 OOP1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
